@@ -2,9 +2,9 @@
 
 ## Pull Images from Docker Hub Images
 
-docker pull giovi06/m347-joke:joke-consumer-py-347
+$ docker pull giovi06/m347-joke:joke-consumer-py-347
 
-docker pull giovi06/m347-joke:joke-provider-go-347
+$ docker pull giovi06/m347-joke:joke-provider-go-347
 
 ## OR create Images
 
