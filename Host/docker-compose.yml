@@ -1,0 +1,21 @@
+# Docker Compose file for setting up provider and consumer services (Container)
+version: '3'
+
+services:
+  provider:
+    image: joke-provider-go
+    networks:
+      - my-joke-network
+    ports:
+      - 3001:3001
+
+  consumer:
+    image: joke-consumer-python
+    networks:
+      - my-joke-network
+    ports:
+      - 5002:5002
+
+# Custom network for connecting provider and consumer services
+networks:
+  my-joke-network: 
